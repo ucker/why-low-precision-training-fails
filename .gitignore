@@ -1,0 +1,13 @@
+GPT2-S_1e-3_0.0_*
+visualize
+__pycache__
+.vscode
+log.txt
+GPT2-S_1e-3_0.1_0_BF16_with_FA/generated_indices_rank_*.txt
+data/openwebtext/train.bin
+data/openwebtext/val.bin
+*.log
+*.pdf
+visualize_SFA_loss.py
+attention.py.bak
+model.py.bak
