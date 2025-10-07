@@ -85,7 +85,7 @@ class FlashAttentionFunction(Function):
                     close_to_max = (attn_weights >= (block_row_maxes - 1e-3))
                     num_close_to_max = close_to_max.sum(dim=-1, keepdims=True)
                     greater_than_one_mask = (num_close_to_max > 1)
-                    block_row_maxes = torch.where(greater_than_one_mask & (block_row_maxes > 0), 7. * block_row_maxes, block_row_maxes)
+                    block_row_maxes = torch.where(greater_than_one_mask & (block_row_maxes > 0), 2. * block_row_maxes, block_row_maxes)
                     block_row_maxes = torch.where(greater_than_one_mask & (block_row_maxes < 0), 0, block_row_maxes)
 
                 new_row_maxes = torch.maximum(block_row_maxes, row_maxes)

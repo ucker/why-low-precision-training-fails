@@ -36,7 +36,6 @@ import time
 import math
 import pickle
 from contextlib import nullcontext
-import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 import numpy as np
@@ -83,7 +82,7 @@ dropout = 0.0 # for pretraining 0 is good, for finetuning try 0.1+
 bias = False # do we use bias inside LayerNorm and Linear layers?
 # adamw optimizer
 learning_rate = 1e-3 # max learning rate
-max_iters = 30000 # total number of training iterations
+max_iters = 600000 # total number of training iterations
 weight_decay = 0.0
 beta1 = 0.9
 beta2 = 0.95
