@@ -1,4 +1,4 @@
-# Code for Paper `Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention`
+# Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention
 
 1. Download openwebtext dataset and preprocess it following instructions in [data/openwebtext/readme.md](data/openwebtext/readme.md).
 2. Install dependencies: transformers, datasets, wandb, torch, etc.
